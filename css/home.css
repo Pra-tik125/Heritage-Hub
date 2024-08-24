@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {  
+    scroll-behavior: smooth;  
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Jost', sans-serif;
+}
+
+.header1 {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    z-index: 100;
+
+    top: 0;
+}
+
+.navdiv {
+    padding: 20px 30px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navdiv.scrolled {
+    padding: 5px 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.navdiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nb1 img {
+    height: 60px;
+}
+
+.nb1 li a {
+
+    text-decoration: none;
+    color: rgb(123, 122, 122);
+    font-size: 20px;
+}
+
+.nb1 .logo a {
+    font-size: 25px;
+}
+
+.nb3 img {
+    height: 20px;
+}
+
+.menu-icon {
+    color: rgb(123, 122, 122);
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.menu-icon p {
+    padding-left: 40px;
+    display: inline;
+    color: rgb(123, 122, 122);
+
+}
+
+.section1 {
+    display: block;
+    position: relative;
+}
+
+.section1 .sec1-back1 {
+    display: block;
+    object-fit: cover;
+    /* width: 100%;
+    height: auto; */
+    height: 600px;
+    width: 100%;
+}
+
+.section1 .sec1-back2 {
+    position: absolute;
+    top: 0;
+border-radius: 8px;
+    /* top: -460px;
+    left: 40px; */
+    background-color: rgba(187, 187, 187, 0.616);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 500px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.sec1-back2 h1 {
+    font-size: 60px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.sec1-back2 h2 {
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 400;
+
+    color: rgb(36, 35, 35);
+}
+
+.sec1-back2 div {
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 20px;
+    color: rgb(40, 40, 40);
+}
+
+.sec1-back2 .sec1-btn1-2 {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.sec1-back2 .sec1-btn1-2 button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+
+}
+
+.sec1-back2 .sec1-btn1-2 button:nth-child(1) {
+    background-color: rgb(64, 27, 158);
+    color: white;
+    font-family: 'Jost', sans-serif;
+
+}
+
+.sec1-back2 .sec1-btn1-2 button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid rgb(64, 27, 158);
+    color: rgb(64, 27, 158);
+}
+
+.sec1-back2 .sec1-btn1-2 button:nth-child(1):hover {
+    background-color: rgba(64, 27, 158, 0.676);
+}
+
+.sec1-back2 .sec1-btn1-2 button:nth-child(2):hover {
+    background-color: rgb(64, 27, 158);
+    color: white;
+}
+
+
+.section2{
+    background-color:rgb(240, 243, 252);
+}
+
+.section2 .sec2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.section2 .sec2-box{
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sec2-back1{
+    object-fit: cover;
+    border-radius: 8px;
+    height: 515px;
+    position: relative;
+    right: 15%;
+}
+
+.sec2-back2{
+    border-radius: 8px;
+    z-index: 1;
+    height: 400px;
+    width: 700px;
+    position: relative;
+    left: 90px;
+    padding: 30px 20px;
+    background-color: rgb(240, 243, 252);
+}
+
+.sec2-back2 h1{
+    font-weight: 400;
+    color: rgb(103, 61, 230);
+    font-size: 48px;
+    padding: 10px;
+}
+
+.sec2-back2 h3{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 10px;
+}
+
+.sec2-back2 div{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px;
+    
+}
+
+
+.section3{
+    padding: 25px;
+    background-color: rgb(240, 243, 252);
+}
+.sec3-back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.sec3{
+    margin: 40px 20px;
+    width: 70vw; 
+    
+    
+}
+
+.sec3 h1{
+    font-weight: 400;
+    color: rgb(103, 61, 230);
+    font-size: 36px;
+    padding: 5px;
+    text-align: center;
+}
+.sec3 h3{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+}
+.sec3 div{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.heritage-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(240, 243, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4{
+    height: auto;
+    width: 80vw;
+}
+
+
+.heritage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 50px 35px;
+}
+
+.heritage-card {
+    background-color: rgb(240, 243, 252);
+    /* padding: 20px; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px; /* Set this to ensure cards have the same height */
+}
+
+.heritage-card img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 8px 8px 150px 150px;
+    
+}
+
+.heritage-card h5 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20px;
+}
+
+.heritage-card h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    padding: 10px 0;
+}
+
+.heritage-card .card-description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    flex-grow: 1;
+    /* min-height: 200px; */
+}
+
+.section4 .sec4button{
+    margin-top: auto;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.section4 .sec4button .sec4-btn{
+    padding: 14px 20px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(64, 27, 158);
+    font-size: 17px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.section4 .sec4button .sec4-btn:hover{
+background-color: rgba(64, 27, 158, 0.676);
+}
+
+
+
+
+
+
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    /* padding: 40px 20px; */
+}
+
+.blockq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: rgb(103, 61, 230);
+    width: 100%;
+}
+
+.site-footer blockquote {
+    font-size: 18px;
+   padding: 20px 100px;
+    font-style: italic;
+  
+}
+
+.site-footer cite {
+    display: block;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.footer-info {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    height: 200px;
+}
+
+.footer-info .footer-logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.site-footer .footer-info .footer-logo img{
+    height: 75px;
+}
+
+
+.footer-info address ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+}
+
+.footer-info address ul li{
+    
+    padding: 7px 5px;
+    
+}
+
+.footer-info address ul :nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+    
+
+.footer-info address ul li a{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.footer-info address ul li img{
+   
+padding: 0 10px 0 0;
+
+}
+ 
+
+
+
+.footer-info address {
+    font-style: normal;
+    line-height: 1;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,100 @@
+@media (max-width: 1000px) {
+    .nb1 img {
+        height: 55px;
+    }
+
+    .sec1-back2 h1 {
+        font-size: 40px;
+    }
+
+    .sec1-back2 h2 {
+        font-size: 20px;
+    }
+
+    .sec1-back2 div {
+        font-size: 14px;
+    }
+
+    .sec1-back2 .sec1-btn1-2 {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 780px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navdiv>:nth-child(2) {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navdiv>:nth-child(3) {
+        /* display: none; */
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        left: 300px;
+        top: 17px;
+        gap: 10px;
+    }
+
+
+
+
+    .navdiv .menu-icon {
+        display: block;
+    }
+
+
+    .navdiv ul.active {
+        display: flex;
+
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .nb1 img {
+        height: 40px;
+    }
+
+    .section1 .sec1-back2 {
+        margin: 15px;
+    }
+
+    .sec1-back2 h1 {
+        font-size: 30px;
+
+    }
+
+    .sec1-back2 h2 {
+        font-size: 18px;
+    }
+
+    .sec1-back2 div {
+
+        font-size: 14px;
+    }
+
+    .sec1-back2 .sec1-btn1-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sec1-back2 .sec1-btn1-2 button {
+        width: 100%;
+    }
+
+    .navdiv>:nth-child(3) {
+
+        left: 180px;
+        gap: 5px;
+    }
+
+}
