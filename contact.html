@@ -15,14 +15,13 @@
 
 <body>
 
-  <script src="JavaScript/script.js"></script>
   <header class="header1">
     <nav class="navbar">
       <div class="navdiv">
         <span class="menu-icon" onclick="toggleMenu()">☰<p>Heritage Hub</p></span>
 
         <ul class="nb1">
-          <li><a href="index.html"><img class="nb2" src="logos/heritage logo.webp" alt="heritage"></a></li>
+          <li><a href="index.html"><img class="nb2" src="assets/logos/heritage logo.webp" alt="heritage"></a></li>
           <li class="logo"><a href="index.html">Heritage</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
@@ -55,40 +54,47 @@
 
 
 
-
+  <!-- form start -->
 
 
   <section class="sec2">
     <div class="wrapper">
       <header>Send us a Message</header>
-      <form action="message.php">
+
+      <form method="POST" id="contactform">
+
+        <input type="hidden" name="access_key" value="54d794d4-4d0c-41b2-af46-2ef3e6a66c43">
+
         <div class="dbl-field">
-          <div class="field">
-            <input type="text" name="name" placeholder="Enter your name">
+          <div class="field" >
+            <input type="text" name="name" placeholder="Enter your name" required>
             <i class='fas fa-user'></i>
           </div>
-          <div class="field">
-            <input type="text" name="email" placeholder="Enter your email">
+          <div class="field" >
+            <input type="email" name="email" placeholder="Enter your email" required>
             <i class='fas fa-envelope'></i>
           </div>
         </div>
         <div class="dbl-field">
-          <div class="field">
-            <input type="text" name="phone" placeholder="Enter your phone">
+          <div class="field" >
+            <input type="tel" name="phone" placeholder="Enter your phone" required>
             <i class='fas fa-phone-alt'></i>
           </div>
-          <div class="field">
-            <input type="text" name="website" placeholder="Enter your website">
-            <i class='fas fa-globe'></i>
+          <div class="field" >
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <i class='fas fa-book'></i>
           </div>
         </div>
-        <div class="message">
-          <textarea name="message" placeholder="Write your message"></textarea>
+        <div class="message" >
+          <textarea name="message" placeholder="Write your message" required></textarea>
           <i class="material-icons">message</i>
         </div>
+        <div class="h-captcha" data-captcha="true" required></div>
+
+
         <div class="button-area">
           <button type="submit">Send Message</button>
-          <span></span>
+          <div id="result"></div>
         </div>
       </form>
     </div>
@@ -111,26 +117,28 @@
     </div>
     <div class="footer-info">
       <div class="footer-logo">
-        <img src="logos/heritage logo white.webp" alt="" class="lastlogo">Heritage Hub
+        <img src="assets/logos/heritage logo white.webp" alt="" class="lastlogo">Heritage Hub
       </div>
       <address>
 
 
         <ul class="footerlist">
-          <li><a href=""><img src="svgs/location-svg.svg"></img>Udyog Bhavan, Block No. 16, 4th Floor,
+          <li><a href=""><img src="assets/svgs/location-svg.svg"></img>Udyog Bhavan, Block No. 16, 4th Floor,
               Sector-11, Gandhinagar - 382 010.</a></li>
 
-          <li><a href="tel:+91-79-23977179"><img src="svgs/call-svg.svg">079-23977179</a>|<a
+          <li><a href="tel:+91-79-23977179"><img src="assets/svgs/call-svg.svg">079-23977179</a>|<a
               href="tel:+91-79-23977229">079-23977229</a></li>
 
-          <li><a href="mailto:info@gujarattourism.com"><img src="svgs/mail-svg.svg" alt="">info@gujarattourism.com</a>
+          <li><a href="mailto:info@gujarattourism.com"><img src="assets/svgs/mail-svg.svg" alt="">info@gujarattourism.com</a>
           </li>
         </ul>
       </address>
     </div>
   </footer>
 
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
+  <script src="JavaScript/script.js"></script>
 </body>
 
 </html>
