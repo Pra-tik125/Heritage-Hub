@@ -48,20 +48,48 @@ body {
     height: 60px;
 }
 
-.nb1 li a {
+.navbar .nb1 li{
+    display: inline-block;
+}
 
+.navbar .nb1 li a {
+    
     text-decoration: none;
     color: rgb(123, 122, 122);
     font-size: 20px;
+    position: relative;
+    transition: color 0.5s ease; /* Smooth transition for color */
 }
 
-.nb1 .logo a {
+.navbar .nb1 li a:hover {
+    color: #000; /* Black color on hover */
+}
+
+.navbar .nb1 li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #000; /* Color of the underline */
+    width: 0; /* Initially, the underline is not visible */
+    transition: width 0.3s ease; /* Smooth transition for underline */
+}
+
+.navbar .nb1 li:not(.donthover, .logo) a:hover::after{
+    width: 100%; /* Full width of the underline on hover */
+}
+
+
+
+
+
+.navbar .nb1 .logo a {
     font-size: 25px;
+    text-decoration: none;
 }
 
-.nb3 img {
-    height: 20px;
-}
 
 .menu-icon {
     color: rgb(123, 122, 122);
@@ -76,6 +104,41 @@ body {
     color: rgb(123, 122, 122);
 
 }
+
+
+.nb3 li {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.nb3 .icon i {
+    font-size: 24px; /* Adjust the size of the icons */
+    color: #000; /* Default color (black) */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.nb3 .icon i:hover {
+    color: #4267B2; /* Color for Facebook icon hover */
+}
+
+.nb3 li:nth-child(2) .icon i:hover{
+    color: #E1306C; /* Color for Instagram icon hover */
+}
+
+.nb3 li:nth-child(3) .icon i:hover {
+    color: #1DA1F2; /* Color for Twitter/X icon hover */
+}
+
+
+
+
+
 
 .section1 {
     display: block;

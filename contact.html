@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="responsive-css/contact-responsive.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 </head>
@@ -21,7 +22,7 @@
         <span class="menu-icon" onclick="toggleMenu()">☰<p>Heritage Hub</p></span>
 
         <ul class="nb1">
-          <li><a href="index.html"><img class="nb2" src="assets/logos/heritage logo.webp" alt="heritage"></a></li>
+          <li class="donthover"><a href="index.html"><img class="nb2" src="assets/logos/heritage logo.webp" alt="heritage"></a></li>
           <li class="logo"><a href="index.html">Heritage</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
@@ -29,13 +30,12 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul class="nb3">
-          <li><a href="https://www.facebook.com/"><img src="https://www.svgrepo.com/show/3885/facebook.svg" alt=""></a>
-          </li>
-          <li><a href="https://www.instagram.com/"><img src="https://www.svgrepo.com/show/164874/instagram.svg"
-                alt=""></a></li>
-
-          <li><a href="https://www.x.com/"><img src="https://www.svgrepo.com/show/3967/twitter.svg" alt=""></a></li>
-        </ul>
+                   
+          <li><a href="https://www.facebook.com/" class="icon" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/" class="icon" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.x.com/" class="icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+      
+  </ul>
 
       </div>
     </nav>
@@ -58,6 +58,7 @@
 
 
   <section class="sec2">
+    
     <div class="wrapper">
       <header>Send us a Message</header>
 
@@ -89,11 +90,11 @@
           <textarea name="message" placeholder="Write your message" required></textarea>
           <i class="material-icons">message</i>
         </div>
-        <div class="h-captcha" data-captcha="true" required></div>
+        <div class="h-captcha" data-captcha="true"  data-theme="dark" required></div>
 
 
         <div class="button-area">
-          <button type="submit">Send Message</button>
+          <button class="btn-hover-border" type="submit">Send Message</button>
           <div id="result"></div>
         </div>
       </form>
