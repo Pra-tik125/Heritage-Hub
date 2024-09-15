@@ -19,12 +19,15 @@ function toggleMenu() {
 
 // current page navbar highlight
 
-  // Get the current page URL
-  const currentPage = window.location.pathname;
+// Get the current page URL
+const currentPage = window.location.pathname;
 
-  // Loop through all the nav links
+// Loop through all the nav links
 document.querySelectorAll('.navbar .nb1 li a').forEach(link => {
-    if (link.href.includes(currentPage)) {
+    // Check if the current page is the homepage or a specific page
+    if ((currentPage === '/' || currentPage === '/Heritage-Hub/')) {
+        link.classList.add('activee');
+    } else if (link.href.includes(currentPage)) {
         link.classList.add('active');
     }
 });
