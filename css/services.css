@@ -36,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.4s ease-in-out;
 }
 
 .navdiv.scrolled {
