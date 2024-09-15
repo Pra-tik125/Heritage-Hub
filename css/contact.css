@@ -65,9 +65,9 @@ body {
   /* Smooth transition for color */
 }
 
-.navbar .nb1 li a:hover {
-  color: #000;
-  /* Black color on hover */
+
+.navbar .nb1 li a:hover, .navbar .nb1 li a.active {
+  color: #000; /* Black color on hover */
 }
 
 .navbar .nb1 li a::after {
@@ -76,20 +76,17 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 2px;
-  /* Thickness of the underline */
-  background-color: #000;
-  /* Color of the underline */
-  width: 0;
-  /* Initially, the underline is not visible */
-  transition: width 0.3s ease;
-  /* Smooth transition for underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: #000; /* Color of the underline */
+  width: 0; /* Initially, the underline is not visible */
+  transition: width 0.3s ease; /* Smooth transition for underline */
 }
 
-.navbar .nb1 li:not(.donthover, .logo) a:hover::after {
-  width: 100%;
-  /* Full width of the underline on hover */
+.navbar .nb1 li:not(.donthover, .logo) a:hover::after, .navbar .nb1 li a.active::after{
+  width: 100%; /* Full width of the underline on hover */
 }
+
+
 
 
 
