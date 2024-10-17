@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="responsive-css/home-responsive.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
 </head>
 
 <body>
@@ -21,9 +21,10 @@
                 <span class="menu-icon" onclick="toggleMenu()">☰<p>Heritage Hub</p></span>
 
                 <ul class="nb1">
-                    <li class="donthover"><a href="index.html"><img class="nb2" src="assets/logos/heritage logo.webp" alt="heritage"></a>
+                    <li class="donthover"><a href="index.html"><img class="nb2" src="assets/logos/heritage logo.webp"
+                                alt="heritage"></a>
                     </li>
-                    <li class="logo"><a href="index.html">Heritage</a></li>
+                    <li class="logo"><a href="/">Heritage</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -121,7 +122,7 @@
 
 
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img1.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img1.webp" alt="Ahmedabad's Streets">
                     <h5>Ahmedabad's Streets</h5>
                     <h6>Timeless Charms and Forgotten Pathways</h6>
                     <div class="card-description"> Step back in time and wander the cobblestone corridors of Ahmedabad's
@@ -133,11 +134,42 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/30059/heritage_site/all_heritages/en'">Learn
                             More</button>
+
+
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
 
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img2.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img2.webp" alt="Ahmedabad's Streets">
                     <h5>Hutheesing Jain Temple</h5>
                     <h6>Celestial Tranquility: The Hutheesing Jain Temple</h6>
                     <div class="card-description">Step into a world of serenity at the Hutheesing Jain Temple. Marvel at
@@ -149,11 +181,38 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/63/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img3.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img3.webp" alt="Ahmedabad's Streets">
                     <h5>Calico Museum of Textiles</h5>
                     <h6>Weaving Artistry: Calico Museum of Textiles</h6>
                     <div class="card-description">
@@ -169,10 +228,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/114/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img4.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img4.webp" alt="Ahmedabad's Streets">
                     <h5>Sidi Sayed Mosque</h5>
                     <h6>Architectural Elegance: Sidi Sayed Mosque</h6>
                     <div class="card-description">
@@ -188,10 +274,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/67/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img5.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img5.webp" alt="Ahmedabad's Streets">
                     <h5>Shree Swaminarayan Mandir</h5>
                     <h6>Spiritual Splendor: Shree Swaminarayan Mandir</h6>
                     <div class="card-description">
@@ -207,10 +320,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/113/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img6.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img6.webp" alt="Ahmedabad's Streets">
                     <h5>Jama Masjid</h5>
                     <h6>A Testament to Spiritual Majesty</h6>
                     <div class="card-description">
@@ -226,10 +366,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/76/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img7.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img7.webp" alt="Ahmedabad's Streets">
                     <h5>Jhulta Minara</h5>
                     <h6>Mystical Marvel: Jhulta Minara</h6>
                     <div class="card-description">
@@ -243,10 +410,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/608/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img8.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img8.webp" alt="Ahmedabad's Streets">
                     <h5>Bhadra Fort</h5>
                     <h6>Historic Majesty: Bhadra Fort</h6>
                     <div class="card-description">
@@ -261,10 +455,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/78/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img9.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img9.webp" alt="Ahmedabad's Streets">
                     <h5>Amdavad ni Gufa</h5>
                     <h6> Art's Hidden Oasis: Amdavad ni Gufa</h6>
                     <div class="card-description">
@@ -279,11 +500,38 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/5/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img10.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img10.webp" alt="Ahmedabad's Streets">
                     <h5>Sabarmati Ashram</h5>
                     <h6>Reverence of Peace: Sabarmati Ashram</h6>
                     <div class="card-description">
@@ -299,11 +547,38 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/94/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img11.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img11.webp" alt="Ahmedabad's Streets">
                     <h5>Delhi Darwaza</h5>
                     <h6>Gateway to History: Delhi Darwaza</h6>
                     <div class="card-description">
@@ -318,10 +593,37 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/86/heritage_site/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="heritage-card">
-                    <img src="assets/grid list image/img12.webp" alt="Ahmedabad's Streets">
+                    <img src="assets/heritage grid list image/img12.webp" alt="Ahmedabad's Streets">
                     <h5>Badshah no Haziro</h5>
                     <h6>Royal Reminiscence: Badshah no Haziro</h6>
                     <div class="card-description">
@@ -339,6 +641,33 @@
                         <button class="sec4-btn"
                             onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/30059/heritage_site/all_heritages/en'">Learn
                             More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
