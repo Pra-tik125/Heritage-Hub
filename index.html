@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Hub</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="responsive-css/home-responsive.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://vjs.zencdn.net/7.0/video-js.css" rel="stylesheet">
+    <!-- Add CSS for videojs-vr -->
+    <link href="https://unpkg.com/videojs-vr/dist/videojs-vr.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <header class="header1">
+        <nav class="navbar">
+            <div class="navdiv">
+                <span class="menu-icon" onclick="toggleMenu()">☰<p>Heritage Hub</p></span>
+
+                <ul class="nb1">
+                    <li class="donthover"><a href="index.html"><img class="nb2" src="assets/logos/heritage logo.webp"
+                                alt="heritage"></a>
+                    </li>
+                    <li class="logo"><a href="/">Heritage</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nb3">
+
+                    <li><a href="https://www.facebook.com/" class="icon" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="icon" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.x.com/" class="icon" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="section1">
+
+        <img class="sec1-back1" src="assets/background-img/sec1-background.webp" alt="">
+
+        <div class="sec1-back2">
+            <h1>Heritage Hub</h1>
+            <h2>Mapping the Past <b>:</b> Guiding the Present</h2>
+            <div>
+                Your collaborative gateway to heritage exploration. Discover strategies that enrich your understanding
+                of our cultural legacy, maximizing your engagement with proven techniques. Elevate heritage awareness,
+                fostering connections with the past while embracing modern dynamism. Commence your enriching journey
+                now, infusing life into the narratives of yore.
+            </div>
+            <div class="sec1-btn1-2">
+                <button onclick="location.href='#section2'">Get Started</button>
+                <button onclick="location.href='contact.html'">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+
+        <div class="sec2-container">
+
+            <div class="sec2-box">
+
+                <div class="sec2-back2">
+                    <h1>Welcome to Heritage Hub</h1>
+                    <h3>LEARN MORE ABOUT WHAT WE DO</h3>
+                    <div>At Heritage Hub, we're on a mission to bridge the gap between the past and the present,
+                        preserving the intricate tapestry of our cultural heritage. Through immersive storytelling,
+                        interactive experiences, and community engagement, we're redefining the way you connect with
+                        history. Our curated content takes you on a journey through the cobblestones of time, unraveling
+                        tales that have shaped our city's identity. With a blend of tradition and innovation, we're
+                        committed to igniting curiosity, fostering awareness, and celebrating the soul of Ahmedabad
+                        Streets. Join us in our quest to safeguard, explore, and cherish the heritage that binds us.
+                    </div>
+                </div>
+                <img class="sec2-back1" src="assets/background-img/sec2-background.webp" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section3">
+        <div class="sec3-back">
+            <div class="sec3">
+                <h1>Ahmedabad's Enchanting Heritage</h1>
+                <h3>Unveiling the Stories of a City's Soul</h3>
+                <div>
+
+                    Step into the realm where history whispers through architecture, where streets hold secrets of
+                    bygone
+                    eras, and where the cultural pulse of Ahmedabad beats in every corner. Our "Ahmedabad Heritage"
+                    section
+                    invites you to journey through time, exploring the gems that have woven the city's fabric. Immerse
+                    yourself in tales of grandeur, tradition, and evolution, as we uncover the essence of Ahmedabad's
+                    rich
+                    past. Embark on a digital exploration that brings history to life and lets you become a part of its
+                    continuing narrative. Welcome to a world where heritage reigns supreme.</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section5">
+
+        <!-- Trigger Button -->
+        <button class="btn-77" onclick="showVRVideo()">Start VR Tour</button>
+
+        <!-- Modal for VR Video -->
+        <div id="vrModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeVRVideo()">&times;</span>
+                <video id="my360video" class="video-js vjs-default-skin" height="600" controls muted>
+                    <source src="assets/TM.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- Include scripts -->
+
+    </section>
+
+
+
+
+
+    <section class="heritage-section">
+        <div class="section4">
+
+
+            <div class="heritage-grid">
+
+
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img1.webp" alt="Ahmedabad's Streets">
+                    <h5>Ahmedabad's Streets</h5>
+                    <h6>Timeless Charms and Forgotten Pathways</h6>
+                    <div class="card-description"> Step back in time and wander the cobblestone corridors of Ahmedabad's
+                        past. Unearth the stories of bustling markets, hidden alleys, and architectural wonders that
+                        shaped the city's identity. Curated with love, these snapshots offer a glimpse into a bygone
+                        era. Ready to explore? Click learn more to stroll down memory lane.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/30059/heritage_site/all_heritages/en'">Learn
+                            More</button>
+
+
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg> </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5450198127614!2d72.5900813!3d23.040472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8556c9953fe5%3A0x69d85b60da1d7a36!2sHathising%20ni%20wadi!5e0!3m2!1sen!2sin!4v1729830522565!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img2.webp" alt="Ahmedabad's Streets">
+                    <h5>Hutheesing Jain Temple</h5>
+                    <h6>Celestial Tranquility: The Hutheesing Jain Temple</h6>
+                    <div class="card-description">Step into a world of serenity at the Hutheesing Jain Temple. Marvel at
+                        the intricate marble carvings and elegant architecture that have stood the test of time.
+                        Experience the peace and devotion that fill the air as you explore the sacred space. Ready to
+                        immerse yourself? Click below to learn more about this architectural gem.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/63/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img3.webp" alt="Ahmedabad's Streets">
+                    <h5>Calico Museum of Textiles</h5>
+                    <h6>Weaving Artistry: Calico Museum of Textiles</h6>
+                    <div class="card-description">
+
+                        Uncover the world of textiles at the Calico Museum. From ancient tapestries to contemporary
+                        masterpieces, explore the stories woven into every fabric. Immerse in a journey that threads
+                        history, culture, and craftsmanship. Ready to dive in? Click below to unravel the woven tales.
+
+
+
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/114/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img4.webp" alt="Ahmedabad's Streets">
+                    <h5>Sidi Sayed Mosque</h5>
+                    <h6>Architectural Elegance: Sidi Sayed Mosque</h6>
+                    <div class="card-description">
+
+                        Step into the timeless elegance of the Sidi Sayed Mosque. Admire the delicate tracery of the
+                        iconic "Tree of Life" window, a masterpiece of stone carving that enchants with its intricate
+                        beauty. Feel the history that echoes through its walls, as you stand in awe of the artistic
+                        finesse that defines this place of worship. Eager to learn more? Click below to immerse yourself
+                        in its allure.
+
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/67/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img5.webp" alt="Ahmedabad's Streets">
+                    <h5>Shree Swaminarayan Mandir</h5>
+                    <h6>Spiritual Splendor: Shree Swaminarayan Mandir</h6>
+                    <div class="card-description">
+
+                        Embark on a spiritual journey at Shree Swaminarayan Mandir Kalupur. The temple stands as a
+                        beacon of devotion and architectural grandeur, adorned with intricate carvings and vibrant
+                        colors that tell stories of faith and tradition. Immerse yourself in the atmosphere of reverence
+                        and beauty that defines this sacred space. Ready to explore deeper? Click below to discover the
+                        spiritual haven.
+
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/113/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img6.webp" alt="Ahmedabad's Streets">
+                    <h5>Jama Masjid</h5>
+                    <h6>A Testament to Spiritual Majesty</h6>
+                    <div class="card-description">
+
+
+                        Step into a realm of divine splendor at the Jama Masjid. This architectural marvel stands as a
+                        testament to the spiritual majesty of Ahmedabad. With its elegant domes, intricate minarets, and
+                        serene courtyard, the mosque captures the essence of devotion and artistic brilliance.
+
+                        Eager to experience its grandeur? Click below to journey into the heart of the Jama Masjid.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/76/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img7.webp" alt="Ahmedabad's Streets">
+                    <h5>Jhulta Minara</h5>
+                    <h6>Mystical Marvel: Jhulta Minara</h6>
+                    <div class="card-description">
+
+
+                        Experience the enigma of the Jhulta Minara, the Shaking Minarets. These architectural wonders,
+                        known for their independent vibrations, blend physics with artistry. Witness the unexplained as
+                        you explore the magic of the Jhulta Minara. Ready to be amazed? Click below to discover more.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/608/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img8.webp" alt="Ahmedabad's Streets">
+                    <h5>Bhadra Fort</h5>
+                    <h6>Historic Majesty: Bhadra Fort</h6>
+                    <div class="card-description">
+
+
+                        Embrace the grandeur of the ages at Bhadra Fort, an architectural marvel steeped in history.
+                        From its imposing gates to the intricate carvings that adorn its walls, every corner tells tales
+                        of a regal past. Immerse yourself in an era where culture and valor converged. Ready to step
+                        back in time? Click below to embark on a journey through Bhadra Fort's rich legacy.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/78/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img9.webp" alt="Ahmedabad's Streets">
+                    <h5>Amdavad ni Gufa</h5>
+                    <h6> Art's Hidden Oasis: Amdavad ni Gufa</h6>
+                    <div class="card-description">
+
+
+                        Explore art's hidden sanctuary at Amdavad ni Gufa. Designed by B.V. Doshi, this underground
+                        gallery intertwines nature and creativity. Wander through captivating artworks in curvaceous
+                        passages. Ready to uncover artistic brilliance? Click below to step into Amdavad ni Gufa's realm
+                        and be enchanted.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/5/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img10.webp" alt="Ahmedabad's Streets">
+                    <h5>Sabarmati Ashram</h5>
+                    <h6>Reverence of Peace: Sabarmati Ashram</h6>
+                    <div class="card-description">
+
+
+                        Step into the serenity of Sabarmati Ashram, where Mahatma Gandhi's philosophy of nonviolence
+                        echoes through time. Walk in his footsteps, immerse in stories that shaped India's freedom
+                        struggle, and feel the tranquility that envelops this hallowed ground. Ready to embark on a
+                        journey through history? Click below to explore the spirit of peace that defines Sabarmati
+                        Ashram.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/94/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img11.webp" alt="Ahmedabad's Streets">
+                    <h5>Delhi Darwaza</h5>
+                    <h6>Gateway to History: Delhi Darwaza</h6>
+                    <div class="card-description">
+
+
+                        Transport yourself through ages at Delhi Darwaza, a sentinel of Ahmedabad's past. Admire its
+                        architectural splendor, intricate carvings, and the timeless aura it exudes. Step into a world
+                        where history resonates through stone. Ready to explore? Click below to immerse yourself in the
+                        captivating stories held by Delhi Darwaza.
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/86/heritage_site/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="assets/heritage grid list image/img12.webp" alt="Ahmedabad's Streets">
+                    <h5>Badshah no Haziro</h5>
+                    <h6>Royal Reminiscence: Badshah no Haziro</h6>
+                    <div class="card-description">
+
+
+                        Step into the regal past at Badshah no Haziro, the resting place of Ahmed Shah I, founder of
+                        Ahmedabad. Marvel at the intricate lattice work, the imposing dome, and the architectural
+                        grandeur that pay homage to an illustrious era. Immerse yourself in the legacy of the city's
+                        founder and experience the blend of history and architecture that defines Badshah no Haziro.
+                        Ready to journey through time? Click below to explore further.
+
+
+                    </div>
+                    <div class="sec4button">
+                        <button class="sec4-btn"
+                            onclick="location.href='http://heritage.ahmedabadcity.gov.in/details/30059/heritage_site/all_heritages/en'">Learn
+                            More</button>
+
+                        <button class="btn-95" onclick="openMapModal()">
+                            <svg viewBox="0 0 45.917 45.917">
+                                <path d="M33.523,28.334c-0.717,1.155-1.498,2.358-2.344,3.608c7.121,1.065,10.766,3.347,10.766,4.481
+                                          c0,1.511-6.459,5.054-18.986,5.054c-12.528,0-18.988-3.543-18.988-5.054c0-1.135,3.645-3.416,10.768-4.481
+                                          c-0.847-1.25-1.628-2.453-2.345-3.608C5.365,29.661,0,32.385,0,36.424c0,5.925,11.551,9.024,22.959,9.024s22.958-3.1,22.958-9.024
+                                          C45.917,32.385,40.553,29.661,33.523,28.334z"></path>
+                                <path d="M22.96,36.047c1.032,0,2.003-0.491,2.613-1.325c3.905-5.33,10.813-15.508,10.813-20.827
+                                          c0-7.416-6.012-13.427-13.427-13.427c-7.417,0-13.427,6.011-13.427,13.427c0,5.318,6.906,15.497,10.812,20.827
+                                          C20.957,35.556,21.928,36.047,22.96,36.047z M17.374,13.63c0-3.084,2.5-5.584,5.585-5.584c3.084,0,5.584,2.5,5.584,5.584
+                                          s-2.5,5.584-5.584,5.584C19.874,19.215,17.374,16.715,17.374,13.63z"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Map Modal -->
+
+                        <div id="mapModal" class="map-modal">
+                            <div class="map-modal-content">
+                                <span class="close" onclick="closeMapModal()">&times;</span>
+
+                                <!-- Embed Google Map or any other map iframe here -->
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="site-footer">
+        <div class="blockq">
+            <blockquote>
+                <h1>"</h1>Our heritage and ideals, our code and standards - the things we live by and teach our children
+                - are
+                preserved or diminished by how freely we exchange ideas and feelings.
+                <cite>— Walt Disney</cite>
+            </blockquote>
+        </div>
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="assets/logos/heritage logo white.webp" alt="" class="lastlogo">Heritage Hub
+            </div>
+            <address>
+
+
+
+                <ul class="footerlist">
+                    <li><a href=""><img src="assets/svgs/location-svg.svg"></img>Udyog Bhavan, Block No. 16, 4th Floor,
+                            Sector-11, Gandhinagar - 382 010.</a></li>
+
+                    <li><a href="tel:+91-79-23977179"><img src="assets/svgs/call-svg.svg">079-23977179</a>|<a
+                            href="tel:+91-79-23977229">079-23977229</a></li>
+
+                    <li><a href="mailto:info@gujarattourism.com"><img src="assets/svgs/mail-svg.svg"
+                                alt="">info@gujarattourism.com</a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+
+
+    <script src="JavaScript/script.js"></script>
+    <script src="https://vjs.zencdn.net/7.0/video.js"></script>
+    <script src="https://unpkg.com/videojs-vr/dist/videojs-vr.min.js"></script>
+
+    <!-- vr tour script -->
+    <script>
+        // Initialize the VR plugin
+        const player = videojs('my360video');
+        player.vr({
+            projection: '360',
+            debug: true
+        });
+
+        // Function to show the VR video modal
+        function showVRVideo() {
+            document.getElementById("vrModal").style.display = "block";
+            player.play();
+        }
+
+        // Function to close the VR video modal
+        function closeVRVideo() {
+            document.getElementById("vrModal").style.display = "none";
+            player.pause();
+        }
+
+        // Close modal when clicking outside of the modal content
+        window.onclick = function (event) {
+            if (event.target == document.getElementById("vrModal")) {
+                closeVRVideo();
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
